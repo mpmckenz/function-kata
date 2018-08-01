@@ -62,7 +62,19 @@
             or functions. Instead, use functions you wrote in earlier katas to write this function. Display the result of
             calling fibonacci(8), which should be 13: 0 1 1 2 3 5 8 [13] 21 The number in brackets is the 8th fibonacci number.</li>
         <h4>Answer:</h4>
-        <p></p>
+        <p><i>console.log("Fibonacci: 3 Points");
+            function fibonacci(n) {
+            var numberbeforeresult = 1;
+            var twobeforeresult = 1;
+            var result = 0
+            for (let counter = 1; counter < n; counter++) {
+                twobeforeresult = numberbeforeresult
+                numberbeforeresult = result
+                result = add(numberbeforeresult, twobeforeresult)
+            }
+            return result;
+        }
+            console.log(fibonacci(8));</i></p>
     </ol>
 </body>
 </html>
